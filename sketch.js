@@ -21,30 +21,48 @@ function preload(){
 }
 
 function setup(){
-    var canvas = createCanvas(1200,400);
+    var canvas = createCanvas(1535,600);
     engine = Engine.create();
     world = engine.world;
 
 
-    ground = new Ground(600,height,1200,20);
+    ground = new Ground(600,height,1500,20);
     platform = new Ground(150, 305, 300, 170);
 
-    box1 = new Box(700,320,70,70);
-    box2 = new Box(920,320,70,70);
-    pig1 = new Pig(810, 350);
-    log1 = new Log(810,260,300, PI/2);
+    box1 = new Box(780,320+200,100,100);
+    box2 = new Box(910,320+200,100,100);
+    pig1 = new Pig(810, 350+200);
+    log1 = new Log(810,260+230,400, PI/2);
 
-    box3 = new Box(700,240,70,70);
-    box4 = new Box(920,240,70,70);
-    pig3 = new Pig(810, 220);
+    box3 = new Box(700,240+200,100,100);
+    box4 = new Box(920,240+200,100,100);
+    pig3 = new Pig(810, 220+200);
     // pig4 = new Pig(910, 220);
-    pig5 = new Pig(880, 350);
-    pig6 = new Pig(880, 220);
-    log3 =  new Log(810,180,300, PI/2);
+    pig5 = new Pig(880, 350+200);
+    pig6 = new Pig(880, 220+200);
+    log3 =  new Log(810,180+230,400, PI/2);
 
-    box5 = new Box(810,160,70,70);
-    log4 = new Log(760,120,150, PI/7);
-    log5 = new Log(870,120,150, -PI/7);
+    box5 = new Box(810,160+200,100,100);
+    log4 = new Log(760,120+230,200, PI/7);
+    log5 = new Log(870,120+230,200, -PI/7);
+
+
+    // box6 = new Box(780+200,320+200,100,100);
+    // box7 = new Box(910+200,320+200,100,100);
+    // pig7 = new Pig(810+200, 350+200);
+    // log6 = new Log(810+200,260+230,400, PI/2);
+
+    // box8 = new Box(700+200,240+200,100,100);
+    // box9 = new Box(920+200,240+200,100,100);
+    // pig8 = new Pig(810+200, 220+200);
+    // // pig4 = new Pig(910, 220);
+    // pig9 = new Pig(880+200, 350+200);
+    // pig10 = new Pig(880+200, 220+200);
+    // log7 =  new Log(810+200,180+230,400, PI/2);
+
+    // box10 = new Box(810+200,160+200,100,100);
+    // log8 = new Log(760+200,120+230,200, PI/7);
+    // log9 = new Log(870+200,120+230,200, -PI/7);
 
     bird = new Bird(200,50);
 
@@ -83,6 +101,22 @@ function draw(){
     pig5.display();
     pig5.score();
     pig6.display();
+
+    // box7.display();
+    // box8.display();
+    // box9.display();
+    // box10.display();
+
+    // pig7.display();
+    // pig8.display();
+    // pig9.display();
+    // pig10.display();
+
+    // log7.display();
+    // log8.display();
+    // log9.display();
+
+
     bird.display();
     platform.display();
     //log6.display();
